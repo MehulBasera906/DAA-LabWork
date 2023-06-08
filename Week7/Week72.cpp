@@ -2,8 +2,8 @@
 using namespace std;
 void bellmannFord(int st, int dest, vector<vector<int>> edges, int V, vector<pair<vector<int>, int>> &ans)
 {
-    vector<int> dist(V, 1e9);
-    vector<int> par(V);
+    vector<int> dist(V+1, 1e9);
+    vector<int> par(V+1);
     for (int i = 0; i <= V; i++)
     {
         par[i] = i;
