@@ -4,7 +4,7 @@ void bellmannFord(int st, int dest, vector<vector<int>> edges, int V, vector<pai
 {
     vector<int> dist(V, 1e9);
     vector<int> par(V);
-    for (int i = 0; i < V; i++)
+    for (int i = 0; i <= V; i++)
     {
         par[i] = i;
     }
